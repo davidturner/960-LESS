@@ -32,6 +32,13 @@ Additional options, such as prefix, suffix, alpha and omega (common elements wit
 	.alpha;
 }             
 
+One of the advantages of using LESS mixins for the grid is that you're not limited to the CSS you are given, you can define what you want and it will work to accommodate you:
+                   
+/* Defining a column that makes use of decimals (half column) */
+.grid_3_5{    
+	.grid(24,3.5);   
+}
+
 VERSION HISTORY
 
 0.1 - Basic 960 Functionality
