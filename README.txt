@@ -1,4 +1,4 @@
-ABOUT 960 LESS (V 0.2)
+ABOUT 960 LESS (v0.3)
 
 960 LESS is an adaption of the 960 Grid System available at http://960.gs. This adaption is done to make use of LESS Mixins to, in theory, allow for less code to be used in the creation of a site. The flexibility of the mixins allows for pretty much any grid system to be usable, with margins of 10px per column. This allow, in theory, 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24 or more columns to be used without having to create excessive amounts of code.
 
@@ -37,9 +37,15 @@ One of the advantages of using LESS mixins for the grid is that you're not limit
 /* Defining a column that makes use of decimals (half column) */
 .grid_3_5{    
 	.grid(24,3.5);   
+}      
+
+/* Pushing an element */
+div{
+  .push(24,2)
 }
 
 VERSION HISTORY
 
 0.1 - Basic 960 Functionality
-0.2 - Added options for prefix and suffix elements to allow better alignment of elements [First Version on GitHub]
+0.2 - Added options for prefix and suffix elements to allow better alignment of elements [First Version on GitHub] 
+0.3 - Added support for push and pull elements, which position elements relatively

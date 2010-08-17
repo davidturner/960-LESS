@@ -14,7 +14,7 @@
 .grid(@grid:@def_grid,@cols:''){  
 	display:inline;
 	float:left;
-   	margin:0 10px;
+  margin:0 10px;
 	width:(960px/@grid * @cols)-20;   
 }      
 
@@ -34,3 +34,13 @@
 .omega(){
 	margin-right:0;
 }   
+
+.push(@grid:@def_grid,@move:'') {
+	position:relative;
+	left:(960px/@grid * @move);
+} 
+   
+.pull(@grid:@def_grid,@move:'') {
+	position:relative;
+	left:(960px/@grid * @move) * -1;
+}
