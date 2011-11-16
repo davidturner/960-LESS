@@ -1,0 +1,43 @@
+.container(){
+  margin:0 auto;
+  width:@width;
+}
+                                      
+// Works out the width of elements based
+// on total number of columns and width
+// number of columns being displayed.
+// Removes 20px for margins
+.grid(@grid:@def_grid,@cols:'',@float:left,@display:inline){
+  display:@display;
+  float:@float;
+  margin:0 @margin;
+  //width:(@width/@grid * @cols) - (@margin * 2);
+  width:(100%/@grid * @cols) - (@margin * 2);
+}  
+
+// Allows for padding before element
+.prefix(@grid:@def_grid,@cols:''){
+  padding-left:(100%/@grid * @cols);
+}
+// Allows for padding after element
+.suffix(@grid:@def_grid,@cols:''){  
+  padding-right:(100%/@grid * @cols);    
+}
+// Removes left margin
+.alpha(){
+  margin-left:0;
+}
+// Removes right margin
+.omega(){
+  margin-right:0;
+}
+
+.push(@grid:@def_grid,@move:'') {
+  position:relative;
+  left:(100%/@grid * @move);
+} 
+
+.pull(@grid:@def_grid,@move:''){
+  position:relative;
+  left:(100%/@grid * @move) * -1;
+}
