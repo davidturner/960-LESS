@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 // Forget or not necessary??
 @width: 90%; // Like this?
+=======
+// Defining number of columns in the grid.
+// Common Values would be 12, 16 or 24
+@width: 100%;
+@def_grid: 16;
+>>>>>>> Tweaks for consistency.
 
 .container(){
   margin:0 auto;
@@ -15,7 +22,6 @@
   display:@display;
   float:@float;
   margin:0 @margin;
-  //width:(@width/@grid * @cols) - (@margin * 2);
   width:(100%/@grid * @cols) - (@margin * 2);
 }  
 
