@@ -46,7 +46,7 @@ One of the advantages of using LESS mixins for the grid is that you're not limit
 
 VERSION HISTORY
 
-0.1 - Basic 960 Functionality
-0.2 - Added options for prefix and suffix elements to allow better alignment of elements [First Version on GitHub] 
-0.3 - Added support for push and pull elements, which position elements relatively
-0.4 - Additional version of grid released. In addition to the original pixel based grid system, a percentage based one has been added.
+0.1 - Basic 960 Functionality  
+0.2 - Added options for prefix and suffix elements to allow better alignment of elements [First Version on GitHub]   
+0.3 - Added support for push and pull elements, which position elements relatively  
+0.4 - Additional version of grid released. In addition to the original pixel based grid system, a percentage based one has been added.  
